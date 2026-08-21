@@ -5,5 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "ctkmessagebox>=2.7",
+    "customtkinter>=6.0.0",
     "pikepdf>=10.12.0",
 ]

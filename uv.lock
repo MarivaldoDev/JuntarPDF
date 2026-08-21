@@ -3,15 +3,56 @@ revision = 3
 requires-python = ">=3.13"
 
 [[package]]
+name = "ctkmessagebox"
+version = "2.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "customtkinter" },
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1d/c3/1e4235e586e3b846bc5c82719760041f815a26c7d8b8933402e08216e81c/ctkmessagebox-2.7.tar.gz", hash = "sha256:5ce7e76b797c8d5de5f29438d8c784e33c72fb6ff666c87eb8991815c46c59c5", size = 126355, upload-time = "2024-06-29T07:53:30.19Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/e0/827193418fd1c0b2f7c64cb0fec255996e40da69e05b2454fd1375a64eff/CTkMessagebox-2.7-py3-none-any.whl", hash = "sha256:68941ccab2251f2fd3ac3338a99bdd30d9f28fee4ef0070dfdd0420be1c34a5a", size = 125878, upload-time = "2024-06-29T07:53:26.47Z" },
+]
+
+[[package]]
+name = "customtkinter"
+version = "6.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "darkdetect" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c4/36/aee6ed9171a5a232da66a8b257752bd03d25b487c9d67ba367ad159bd976/customtkinter-6.0.0.tar.gz", hash = "sha256:c782df167bc64ab3fc3140286df06967ac2de4dcc97dd5958426fe9c1a98057b", size = 267195, upload-time = "2026-06-24T20:14:32.144Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/63/e2d3387432c5a94dec64031c86b5ba737216de7e7490abb55efd64dec054/customtkinter-6.0.0-py3-none-any.whl", hash = "sha256:704fcbf1d2fca06bd7881b0afacfae72aed9864c9b6de2870e632e55eb3a0456", size = 302166, upload-time = "2026-06-24T20:14:30.191Z" },
+]
+
+[[package]]
+name = "darkdetect"
+version = "0.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/45/77/7575be73bf12dee231d0c6e60ce7fb7a7be4fcd58823374fc59a6e48262e/darkdetect-0.8.0.tar.gz", hash = "sha256:b5428e1170263eb5dea44c25dc3895edd75e6f52300986353cd63533fe7df8b1", size = 7681, upload-time = "2022-12-16T14:14:42.113Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/f2/728f041460f1b9739b85ee23b45fa5a505962ea11fd85bdbe2a02b021373/darkdetect-0.8.0-py3-none-any.whl", hash = "sha256:a7509ccf517eaad92b31c214f593dbcf138ea8a43b2935406bbd565e15527a85", size = 8955, upload-time = "2022-12-16T14:14:40.92Z" },
+]
+
+[[package]]
 name = "juntarpdfs"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ctkmessagebox" },
+    { name = "customtkinter" },
     { name = "pikepdf" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pikepdf", specifier = ">=10.12.0" }]
+requires-dist = [
+    { name = "ctkmessagebox", specifier = ">=2.7" },
+    { name = "customtkinter", specifier = ">=6.0.0" },
+    { name = "pikepdf", specifier = ">=10.12.0" },
+]
 
 [[package]]
 name = "lxml"
