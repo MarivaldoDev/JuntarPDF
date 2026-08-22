@@ -5,6 +5,9 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-latest
@@ -25,9 +28,12 @@ jobs:
       - name: Build executable
         run: uv run pyinstaller main.spec
 
+      - name: Check build output
+        run: |
+          Get-ChildItem -Recurse dist
+
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: dist/main.exe
           generate_release_notes: true
-  
