@@ -15,7 +15,7 @@ DefaultGroupName={#MyAppName}
 OutputDir=installer
 OutputBaseFilename=JuntarPDFs-Setup
 
-SetupIconFile=logo.ico
+SetupIconFile=configs/logo.ico
 
 Compression=lzma
 SolidCompression=yes

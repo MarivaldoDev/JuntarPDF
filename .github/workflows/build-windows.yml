@@ -29,11 +29,11 @@ jobs:
         run: choco install innosetup --no-progress
 
       - name: Build executable
-        run: uv run pyinstaller main.spec
+        run: uv run pyinstaller configs/main.spec
 
       - name: Build installer
         run: |
-          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss    
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" configs/installer.iss    
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
