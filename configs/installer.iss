@@ -12,10 +12,10 @@ AppPublisher={#MyAppPublisher}
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 
-OutputDir=installer
+OutputDir=..\installer
 OutputBaseFilename=JuntarPDFs-Setup
 
-SetupIconFile=configs/logo.ico
+SetupIconFile=logo.ico
 
 Compression=lzma
 SolidCompression=yes
@@ -23,7 +23,7 @@ SolidCompression=yes
 ArchitecturesInstallIn64BitMode=x64compatible
 
 [Files]
-Source: "dist\JuntarPDFs.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\dist\JuntarPDFs.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

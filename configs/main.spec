@@ -1,9 +1,12 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+from pathlib import Path
+
+project_root = Path(SPEC).resolve().parent.parent
 
 a = Analysis(
-    ['main.py'],
-    pathex=[],
+    [str(project_root / 'main.py')],
+    pathex=[str(project_root)],
     binaries=[],
     datas=[],
     hiddenimports=[],
@@ -35,5 +38,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['logo.ico'],
+    icon=[str(project_root / 'configs' / 'logo.ico')],
 )
