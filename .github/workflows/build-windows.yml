@@ -31,6 +31,10 @@ jobs:
       - name: Build executable
         run: uv run pyinstaller main.spec
 
+      - name: Build installer
+        run: |
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
+
       - name: Check build output
         shell: pwsh
         run: |
