@@ -11,3 +11,4 @@ wheels/
 teste.py
 pdfs/
 *.pdf
+.vscode/
