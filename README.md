@@ -1,6 +1,7 @@
 # Juntar PDFs
-
-<img width="500" height="350" alt="Image" src="https://github.com/user-attachments/assets/2a5c9fc9-a1c3-4827-adf2-1bc944eb590f" />
+<div align="center">
+      <img width="500" height="350" alt="Image" src="https://github.com/user-attachments/assets/2a5c9fc9-a1c3-4827-adf2-1bc944eb590f" />
+</div>
 
 Aplicativo desktop simples e intuitivo para **unir vários arquivos PDF em um único documento**, permitindo organizar a ordem dos arquivos antes da mesclagem.
 
