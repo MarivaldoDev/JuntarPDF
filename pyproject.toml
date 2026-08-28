@@ -1,7 +1,7 @@
 [project]
 name = "juntarpdfs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Aplicativo desktop feito para juntar PDFs"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
